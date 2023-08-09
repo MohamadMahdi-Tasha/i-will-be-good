@@ -11,10 +11,14 @@ export default function Layout() {
         RobotBold: require('../assets/fonts/roboto/Roboto-Bold.ttf'),
     })
 
-    // Returning JSX
-    return (
-        <Stack initialRouteName="Home">
-            <Stack.Screen name={'Home'} />
-        </Stack>
-    );
+    // Conditional Rendering
+    if (fontsAreLoaded) {
+        return (
+            <Stack initialRouteName="Home">
+                <Stack.Screen name={'Home'} />
+            </Stack>
+        );
+    } else {
+        return null;
+    }
 }
