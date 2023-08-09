@@ -1,6 +1,6 @@
 // Defining Color Variables
 const colors = {
-    black : '#00000',
+    black : 'black',
     white : '#ffffff',
     headerBg: 'rgba(167,167,167,0.2)',
     green: '#14FF00',

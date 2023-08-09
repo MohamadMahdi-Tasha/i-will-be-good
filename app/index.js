@@ -1,8 +1,11 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import {SafeAreaView} from "react-native";
+import {SafeAreaView, View, Text} from "react-native";
 import {Stack} from "expo-router";
-import HeaderStyles from "../constants/styles/header.styles";
+import HeaderStyle from "../constants/styles/header.style";
+import TitleStyles from "../constants/styles/title.style";
+import ScrollAbleContainer from "../chunks/scrollAbleContainer";
+import MedicationsTodoComponent from "../components/medicationsTodoComponent";
 
 // Creating Home Page And Exporting It As Default
 export default function HomePage() {
@@ -12,12 +15,21 @@ export default function HomePage() {
             <Stack.Screen
                 options={{
                     title: 'I WILL BE GOOD',
-                    headerStyle: HeaderStyles.header,
-                    headerTitleStyle: HeaderStyles.title,
+                    headerStyle: HeaderStyle.header,
+                    headerTitleStyle: HeaderStyle.title,
                     headerShadowVisible: false,
                     headerTitleAlign: 'center',
                 }}
             />
+
+            <ScrollAbleContainer>
+
+                <View>
+                    <Text numberOfLines={1} style={TitleStyles.title}>Today’s medication todo :</Text>
+                    <MedicationsTodoComponent />
+                </View>
+                
+            </ScrollAbleContainer>
         </SafeAreaView>
     );
 }
