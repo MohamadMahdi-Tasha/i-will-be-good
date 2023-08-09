@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "i-will-be-good",
+    "slug": "i-will-be-good"
+  }
+}
