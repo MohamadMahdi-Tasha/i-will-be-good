@@ -2,7 +2,6 @@
 // Importing Part
 import {View, Text} from "react-native";
 import BlackComponentsStyle from "../constants/styles/blackComponents.style";
-import ScrollAbleContainer from "../chunks/scrollAbleContainer";
 
 // Creating Calender Component And Exporting It As Default
 export default function CalenderComponent() {

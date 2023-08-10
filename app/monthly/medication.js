@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import {SafeAreaView, Text, TouchableOpacity} from "react-native";
+import {SafeAreaView, Text} from "react-native";
 import {Stack} from "expo-router";
 import ScrollAbleContainer from "../../chunks/scrollAbleContainer";
 import CalenderComponent from '../../components/calenderComponent';
