@@ -44,8 +44,15 @@ export default function HomePage() {
                 <View>
                     <View style={ContainerStyle.checkBoxHolder}>
                         <CheckboxComponent large checked dark />
-                        <Text numberOfLines={1} style={TextStyles.checkBoxTitle}>Click here to see monthly</Text>
+                        <Text numberOfLines={1} style={TextStyles.checkBoxTitle}>Today’s meditations todo :</Text>
                     </View>
+                    <View>
+                        <Text numberOfLines={1} style={TextStyles.title}>Meditations done this week :</Text>
+                        <WeeklyDoneThingsComponent />
+                    </View>
+                    <TouchableOpacity style={ButtonStyle.secondary}>
+                        <Text style={ButtonStyle.title}>Click here to see monthly</Text>
+                    </TouchableOpacity>
                 </View>
             </ScrollAbleContainer>
         </SafeAreaView>
