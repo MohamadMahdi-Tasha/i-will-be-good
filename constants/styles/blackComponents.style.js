@@ -20,6 +20,7 @@ const BlackComponentsStyle = StyleSheet.create({
         borderRadius: sizes.large,
         display: 'flex',
         flexDirection: 'row',
+        flexWrap: 'wrap',
         gap: sizes.bigger,
         justifyContent: 'space-between',
         marginBottom: sizes.larger
@@ -48,6 +49,104 @@ const BlackComponentsStyle = StyleSheet.create({
         color: colors.white,
         fontWeight: '500',
         fontFamily: 'RobotRegular'
+    },
+    calender: {
+        backgroundColor: colors.black,
+        borderRadius: sizes.larger,
+        padding: sizes.large,
+        marginBottom: '40px',
+        overflowX: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: sizes.big
+    },
+    calenderRow: {
+        display: 'flex',
+        flexDirection: 'row',
+        gap: sizes.small,
+        justifyContent: "space-between"
+    },
+    calenderItem: {
+        width: '35px',
+        height: '35px',
+        backgroundColor: colors.white,
+        borderRadius: sizes.small,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    calenderItemTitle: {
+        fontSize: sizes.normal,
+        color: colors.black,
+        fontWeight: '500'
+    },
+    calenderWeekDayItem: {
+        width: '35px',
+        height: '35px',
+        backgroundColor: 'transparent',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.white,
+        borderRadius: sizes.small,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    calenderWeekDayTitle: {
+        fontSize: sizes.normal,
+        color: colors.white,
+        fontWeight: '500'
+    },
+    calenderMonthDayDisabled: {
+        width: '35px',
+        height: '35px',
+        backgroundColor: colors.grey,
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.grey,
+        borderRadius: sizes.small,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    calenderMonthDayDisabledTitle: {
+        fontSize: sizes.normal,
+        color: colors.black,
+        fontWeight: '500'
+    },
+    calenderMonthDayGreen: {
+        width: '35px',
+        height: '35px',
+        backgroundColor: colors.green,
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.green,
+        borderRadius: sizes.small,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    calenderMonthDayGreenTitle: {
+        fontSize: sizes.normal,
+        color: colors.black,
+        fontWeight: '500'
+    },
+    calenderMonthDayRed: {
+        width: '35px',
+        height: '35px',
+        backgroundColor: colors.red,
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.red,
+        borderRadius: sizes.small,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    calenderMonthDayRedTitle: {
+        fontSize: sizes.normal,
+        color: colors.black,
+        fontWeight: '500'
     }
 })
 

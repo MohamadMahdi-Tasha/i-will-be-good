@@ -18,6 +18,13 @@ const TextStyles = StyleSheet.create({
         fontFamily: 'RobotRegular',
         fontSize: sizes.bigger,
         marginLeft: sizes.small
+    },
+    paragraph: {
+        color: colors.grey,
+        fontWeight: '500',
+        fontFamily: 'RobotRegular',
+        fontSize: sizes.normal,
+        lineHeight: sizes.large
     }
 })
 

@@ -1,7 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import {View, Text} from 'react-native';
-import CheckboxComponent from "./checkboxComponent";
+import CheckboxComponent from "../chunks/checkboxComponent";
 import BlackComponentsStyle from "../constants/styles/blackComponents.style";
 import blackComponentsStyle from "../constants/styles/blackComponents.style";
 

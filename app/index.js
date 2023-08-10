@@ -1,12 +1,12 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import {SafeAreaView, View, Text, TouchableOpacity} from "react-native";
-import {Stack} from "expo-router";
+import {Stack, useRouter} from "expo-router";
 import HeaderStyle from "../constants/styles/header.style";
 import TextStyles from "../constants/styles/text.style";
 import ScrollAbleContainer from "../chunks/scrollAbleContainer";
 import MedicationsTodoComponent from "../components/medicationsTodoComponent";
-import WeeklyDoneThingsComponent from "../chunks/weeklyDoneThingsComponent";
+import WeeklyDoneThingsComponent from "../components/weeklyDoneThingsComponent";
 import DividerComponent from "../chunks/dividerComponent";
 import CheckboxComponent from "../chunks/checkboxComponent";
 import ButtonStyle from "../constants/styles/button.style";
@@ -14,6 +14,9 @@ import ContainerStyle from "../constants/styles/container.style";
 
 // Creating Home Page And Exporting It As Default
 export default function HomePage() {
+    // Defining Router
+    const router = useRouter();
+
     // Returning JSX
     return (
         <SafeAreaView>
@@ -36,7 +39,7 @@ export default function HomePage() {
                         <Text numberOfLines={1} style={TextStyles.title}>Medications taken this week:</Text>
                         <WeeklyDoneThingsComponent />
                     </View>
-                    <TouchableOpacity style={ButtonStyle.secondary}>
+                    <TouchableOpacity onPress={() => router.push('/monthly/medication')} style={ButtonStyle.secondary}>
                         <Text style={ButtonStyle.title}>Click here to see monthly</Text>
                     </TouchableOpacity>
                 </View>
@@ -50,7 +53,7 @@ export default function HomePage() {
                         <Text numberOfLines={1} style={TextStyles.title}>Meditations done this week :</Text>
                         <WeeklyDoneThingsComponent />
                     </View>
-                    <TouchableOpacity style={ButtonStyle.secondary}>
+                    <TouchableOpacity onPress={() => router.push('/monthly/meditation')} style={ButtonStyle.secondary}>
                         <Text style={ButtonStyle.title}>Click here to see monthly</Text>
                     </TouchableOpacity>
                 </View>
