@@ -12,7 +12,8 @@ const HeaderStyle = StyleSheet.create({
         color: colors.black,
         fontSize: sizes.normal,
         fontWeight: '500',
-        letterSpacing: '3px'
+        letterSpacing: '3px',
+        fontFamily: 'RobotRegular'
     },
     backButton: {
         backgroundColor: colors.black,

@@ -1,13 +1,15 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import {SafeAreaView, View, Text} from "react-native";
+import {SafeAreaView, View, Text, TouchableOpacity} from "react-native";
 import {Stack} from "expo-router";
 import HeaderStyle from "../constants/styles/header.style";
-import TextStyles from "../constants/styles/title.style";
+import TextStyles from "../constants/styles/text.style";
 import ScrollAbleContainer from "../chunks/scrollAbleContainer";
 import MedicationsTodoComponent from "../components/medicationsTodoComponent";
 import WeeklyDoneThingsComponent from "../chunks/weeklyDoneThingsComponent";
 import DividerComponent from "../chunks/dividerComponent";
+import CheckboxComponent from "../chunks/checkboxComponent";
+import ButtonStyle from "../constants/styles/button.style";
 
 // Creating Home Page And Exporting It As Default
 export default function HomePage() {
@@ -23,15 +25,19 @@ export default function HomePage() {
                     headerTitleAlign: 'center',
                 }}
             />
-
             <ScrollAbleContainer>
                 <View>
-                    <Text numberOfLines={1} style={TextStyles.title}>Today’s medication todo :</Text>
-                    <MedicationsTodoComponent />
-                </View>
-                <View>
-                    <Text numberOfLines={1} style={TextStyles.title}>Medications taken this week:</Text>
-                    <WeeklyDoneThingsComponent />
+                    <View>
+                        <Text numberOfLines={1} style={TextStyles.title}>Today’s medication todo :</Text>
+                        <MedicationsTodoComponent />
+                    </View>
+                    <View>
+                        <Text numberOfLines={1} style={TextStyles.title}>Medications taken this week:</Text>
+                        <WeeklyDoneThingsComponent />
+                    </View>
+                    <TouchableOpacity style={ButtonStyle.secondary}>
+                        <Text style={ButtonStyle.title}>Click here to see monthly</Text>
+                    </TouchableOpacity>
                 </View>
                 <DividerComponent />
             </ScrollAbleContainer>

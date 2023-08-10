@@ -33,7 +33,8 @@ const BlackComponentsStyle = StyleSheet.create({
         color: colors.white,
         fontSize: sizes.normal,
         marginLeft: sizes.small,
-        fontWeight: '500'
+        fontWeight: '500',
+        fontFamily: 'RobotRegular'
     },
     weekItems: {
         display: 'flex',
@@ -46,6 +47,7 @@ const BlackComponentsStyle = StyleSheet.create({
         fontSize: sizes.normal,
         color: colors.white,
         fontWeight: '500',
+        fontFamily: 'RobotRegular'
     }
 })
 

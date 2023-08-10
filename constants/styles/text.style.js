@@ -9,7 +9,8 @@ const TextStyles = StyleSheet.create({
         color: colors.black,
         fontSize: sizes.bigger,
         fontWeight: '500',
-        marginBottom: sizes.larger
+        marginBottom: sizes.larger,
+        fontFamily: 'RobotRegular'
     }
 })
 
