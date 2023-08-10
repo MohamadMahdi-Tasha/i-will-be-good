@@ -1,0 +1,16 @@
+// Importing Part
+import {StyleSheet} from "react-native";
+import colors from "../colors/colors";
+
+// Defining Styles Of Dividers
+const DividerStyles = StyleSheet.create({
+    divider: {
+        backgroundColor: colors.black,
+        height: '1px',
+        width: '100%'
+    }
+})
+
+// Exporting Styles
+export default DividerStyles;
+
