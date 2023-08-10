@@ -3,7 +3,7 @@
 import {SafeAreaView, View, Text} from "react-native";
 import {Stack} from "expo-router";
 import HeaderStyle from "../constants/styles/header.style";
-import TitleStyles from "../constants/styles/title.style";
+import TextStyles from "../constants/styles/title.style";
 import ScrollAbleContainer from "../chunks/scrollAbleContainer";
 import MedicationsTodoComponent from "../components/medicationsTodoComponent";
 
@@ -25,10 +25,10 @@ export default function HomePage() {
             <ScrollAbleContainer>
 
                 <View>
-                    <Text numberOfLines={1} style={TitleStyles.title}>Today’s medication todo :</Text>
+                    <Text numberOfLines={1} style={TextStyles.title}>Today’s medication todo :</Text>
                     <MedicationsTodoComponent />
                 </View>
-                
+
             </ScrollAbleContainer>
         </SafeAreaView>
     );
