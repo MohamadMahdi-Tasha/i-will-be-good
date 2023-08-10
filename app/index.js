@@ -10,6 +10,7 @@ import WeeklyDoneThingsComponent from "../chunks/weeklyDoneThingsComponent";
 import DividerComponent from "../chunks/dividerComponent";
 import CheckboxComponent from "../chunks/checkboxComponent";
 import ButtonStyle from "../constants/styles/button.style";
+import ContainerStyle from "../constants/styles/container.style";
 
 // Creating Home Page And Exporting It As Default
 export default function HomePage() {
@@ -40,6 +41,12 @@ export default function HomePage() {
                     </TouchableOpacity>
                 </View>
                 <DividerComponent />
+                <View>
+                    <View style={ContainerStyle.checkBoxHolder}>
+                        <CheckboxComponent large checked dark />
+                        <Text numberOfLines={1} style={TextStyles.checkBoxTitle}>Click here to see monthly</Text>
+                    </View>
+                </View>
             </ScrollAbleContainer>
         </SafeAreaView>
     );

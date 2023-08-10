@@ -6,20 +6,28 @@ import CheckboxStyle from '../constants/styles/checkbox.style';
 import IconComponent from "./iconComponent";
 
 // Creating Checkbox Component And Exporting It As Default
-export default function CheckboxComponent({large, checked}) {
+export default function CheckboxComponent({large, checked, dark}) {
     // Defining States Of Component
     const [isChecked, setChecked] = useState(checked);
 
     // A Function Which Checks Size Of Component And Its State And Returns Style
     function styleToSet() {
-        if (large && isChecked) {
+        if (!dark && large && isChecked) {
             return CheckboxStyle.checkedLarge;
-        } else if (large && !isChecked) {
+        } else if (!dark && large && !isChecked) {
             return CheckboxStyle.uncheckedLarge;
-        } else if (!large && isChecked) {
+        } else if (!dark && !large && isChecked) {
             return CheckboxStyle.checkedSmall;
-        } else if (!large && !isChecked) {
+        } else if (!dark && !large && !isChecked) {
             return CheckboxStyle.uncheckedSmall;
+        } else if (dark && large && isChecked) {
+            return CheckboxStyle.checkedLargeDark;
+        } else if (dark && large && !isChecked) {
+            return CheckboxStyle.uncheckedLargeDark;
+        } else if (dark && !large && isChecked) {
+            return CheckboxStyle.checkedSmallDark;
+        } else if (dark && !large && !isChecked) {
+            return CheckboxStyle.uncheckedSmallDark;
         }
     }
 

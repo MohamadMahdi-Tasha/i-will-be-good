@@ -8,6 +8,13 @@ const ContainerStyle = StyleSheet.create({
     scrollableContainer: {
         backgroundColor: colors.white,
         padding: sizes.big,
+    },
+    checkBoxHolder: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'start',
+        marginBottom: sizes.larger
     }
 })
 

@@ -7,7 +7,8 @@ const DividerStyles = StyleSheet.create({
     divider: {
         backgroundColor: colors.black,
         height: '1px',
-        width: '100%'
+        width: '100%',
+        marginBottom: '45px'
     }
 })
 

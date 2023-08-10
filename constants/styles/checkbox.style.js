@@ -53,6 +53,56 @@ const CheckboxStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    checkedLargeDark: {
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.black,
+        backgroundColor: colors.black,
+        color: colors.white,
+        width: sizes.larger,
+        height: sizes.larger,
+        borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    uncheckedLargeDark: {
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.black,
+        backgroundColor: 'transparent',
+        width: sizes.larger,
+        height: sizes.larger,
+        borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    checkedSmallDark: {
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.black,
+        backgroundColor: colors.black,
+        color: colors.white,
+        width: sizes.big,
+        height: sizes.big,
+        borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    uncheckedSmallDark: {
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: colors.black,
+        backgroundColor: 'transparent',
+        width: sizes.big,
+        height: sizes.big,
+        borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
 })
 
 // Exporting Styles

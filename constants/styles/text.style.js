@@ -11,6 +11,13 @@ const TextStyles = StyleSheet.create({
         fontWeight: '500',
         marginBottom: sizes.larger,
         fontFamily: 'RobotRegular'
+    },
+    checkBoxTitle: {
+        color: colors.black,
+        fontWeight: '500',
+        fontFamily: 'RobotRegular',
+        fontSize: sizes.bigger,
+        marginLeft: sizes.small
     }
 })
 
