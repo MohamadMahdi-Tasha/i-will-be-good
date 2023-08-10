@@ -6,9 +6,9 @@ import CheckboxStyle from '../constants/styles/checkbox.style';
 import IconComponent from "./iconComponent";
 
 // Creating Checkbox Component And Exporting It As Default
-export default function CheckboxComponent({large}) {
+export default function CheckboxComponent({large, checked}) {
     // Defining States Of Component
-    const [isChecked, setChecked] = useState(false);
+    const [isChecked, setChecked] = useState(checked);
 
     // A Function Which Checks Size Of Component And Its State And Returns Style
     function styleToSet() {

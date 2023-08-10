@@ -14,6 +14,16 @@ const BlackComponentsStyle = StyleSheet.create({
         gap: sizes.bigger,
         marginBottom: sizes.larger
     },
+    rowComponent: {
+        backgroundColor: colors.black,
+        padding: sizes.large,
+        borderRadius: sizes.large,
+        display: 'flex',
+        flexDirection: 'row',
+        gap: sizes.bigger,
+        justifyContent: 'space-between',
+        marginBottom: sizes.larger
+    },
     TodosHolder: {
         display: 'flex',
         flexDirection: 'row',
@@ -24,6 +34,18 @@ const BlackComponentsStyle = StyleSheet.create({
         fontSize: sizes.normal,
         marginLeft: sizes.small,
         fontWeight: '500'
+    },
+    weekItems: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: sizes.small,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    weekDayNames: {
+        fontSize: sizes.normal,
+        color: colors.white,
+        fontWeight: '500',
     }
 })
 

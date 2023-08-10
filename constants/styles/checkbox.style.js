@@ -13,6 +13,9 @@ const CheckboxStyles = StyleSheet.create({
         width: sizes.larger,
         height: sizes.larger,
         borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     uncheckedSmall: {
         borderWidth: '1px',
@@ -22,6 +25,9 @@ const CheckboxStyles = StyleSheet.create({
         width: sizes.big,
         height: sizes.big,
         borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     checkedLarge: {
         borderWidth: '1px',
@@ -31,6 +37,9 @@ const CheckboxStyles = StyleSheet.create({
         width: sizes.larger,
         height: sizes.larger,
         borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     checkedSmall: {
         borderWidth: '1px',
@@ -40,6 +49,9 @@ const CheckboxStyles = StyleSheet.create({
         width: sizes.big,
         height: sizes.big,
         borderRadius: '4px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
 })
 

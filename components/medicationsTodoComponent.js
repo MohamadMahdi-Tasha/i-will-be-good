@@ -10,11 +10,11 @@ export default function MedicationsTodoComponent() {
     return (
         <View style={BlackComponentsStyle.components}>
             <View style={BlackComponentsStyle.TodosHolder}>
-                <CheckboxComponent />
+                <CheckboxComponent checked={false} />
                 <Text style={BlackComponentsStyle.title} numberOfLines={1}>Sertraline (the after lunch medication)</Text>
             </View>
             <View style={BlackComponentsStyle.TodosHolder}>
-                <CheckboxComponent />
+                <CheckboxComponent checked={true} />
                 <Text style={BlackComponentsStyle.title} numberOfLines={1}>Rasperidone (the after dinner medication)</Text>
             </View>
         </View>
